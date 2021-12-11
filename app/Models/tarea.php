@@ -14,7 +14,7 @@ class tarea extends Model
     ];
 
     public function usuario(){
-        return $this->belongsTo('App\Models\usuario')->withTimestamps();
+        return $this->belongsTo('App\Models\usuario');
     }
 
 }

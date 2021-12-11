@@ -30,6 +30,9 @@
                             <li class="nav-item text-light">
                                 <a href="{{route('ruta_tarea_buscar')}}">Buscar tarea</a>
                             </li>
+                            <li class="nav-item text-light">
+                                <a href="{{route('ruta_usuario_anadir')}}">Anadir usuario</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

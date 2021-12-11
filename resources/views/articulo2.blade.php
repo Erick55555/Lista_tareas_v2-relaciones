@@ -10,6 +10,7 @@
                 <thead>
                     <tr>
                         <th>NOMBRE TAREAS</th>
+                        <th>Usuario_asignado</th>
                         <th>OPCION</th>
                     </tr>
                 </thead>
@@ -17,6 +18,7 @@
                     @foreach($tareas as $tarea)
                     <tr>
                         <td>{{$tarea->nombre}}</td>
+                        <td>{{$tarea->usuario->nombre}}</td>
                         <td>
                             <form action="{{route('ruta_tarea_eliminar',[$tarea->id])}}" method="post">
                                 @csrf

@@ -14,7 +14,7 @@ class usuario extends Model
     ];
 
     public function tareas(){
-        return $this->hasMany('App\Models\tarea')->withTimestamps();;
+        return $this->hasMany('App\Models\tarea');
     }
     
 }

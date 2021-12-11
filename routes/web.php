@@ -18,10 +18,14 @@ Route::get('/', [tareasControlador::class , "mostrar"])->name("ruta_tarea");
 
 Route::get('/tarea', [tareasControlador::class , "mostrar_formulario"])->name("ruta_tarea_mostrar");
 
+Route::get('/usuario', [tareasControlador::class , "mostrar_formulario_usuario"])->name("ruta_usuario_mostrar");
+
 Route::get('/tarea/buscar', [tareasControlador::class , "mostrar_formulario_buscar"])->name("ruta_tarea_buscar");
 
 Route::post('/tarea/buscar', [tareasControlador::class , "buscar"])->name("ruta_tarea_encontrado");
 
 Route::post('/tarea', [tareasControlador::class , "anadir"])->name("ruta_tarea_anadir");
+
+Route::post('/usuario', [tareasControlador::class , "anadir_usuario"])->name("ruta_usuario_anadir");
 
 Route::delete('/task/{id}', [tareasControlador::class , "eliminar"]) ->name("ruta_tarea_eliminar");;
